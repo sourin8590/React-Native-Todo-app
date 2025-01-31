@@ -1,50 +1,77 @@
-# Welcome to your Expo app 👋
+# React Native To-Do List App (Expo + Expo Router)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a simple React Native To-Do List app built using **Expo** and **Expo Router** for navigation. The app allows users to **add**, **delete**, and **update** tasks efficiently.
 
-## Get started
+## Features
 
-1. Install dependencies
+-   Add new To-Do items
+-   Update existing To-Do items
+-   Delete To-Do items
+-   Navigation using **Expo Router**
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
+### Prerequisites
 
-   ```bash
-    npx expo start
-   ```
+Make sure you have **Node.js** and **Expo CLI** installed.
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```sh
+npm install -g expo-cli
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Clone the Repository
 
-## Learn more
+```sh
+git clone https://github.com/sourin8590/React-Native-Todo-app.git
+cd React-Native-Todo-app
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Install Dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```sh
+npm install
+```
 
-## Join the community
+### Start the App
 
-Join our community of developers creating universal apps.
+```sh
+npx expo start
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+
+```
+
+.
+├── src/
+│   ├── app/
+│   │   ├── _layout.js      # Navigation Layout
+│   │   ├── addtodo.js      # Add To-Do Screen
+│   │   ├── home.js         # Home Screen
+│   │   ├── index.js        # Index Screen
+│   ├── assets/
+│   │   ├── fonts/          # Fonts Directory
+│   │   ├── images/         # Images Directory
+│   ├── components/
+│   │   ├── AddButton.js    # Button Component for Adding To-Dos
+│   │   ├── CustomButton.js # Custom Button Component
+│   │   ├── CustomHeader.js # Custom Header Component
+│   │   ├── TodoItem.js     # Individual To-Do Component
+│   ├── redux/
+│   │   ├── reducers/
+│   │   ├── rootReducer.js  # Root Reducer
+│   │   ├── store.js        # Redux Store
+│   ├── utils/
+│   │   ├── Constants.js    # Constants File
+│   │   ├── Helpers.js      # Helper Functions
+│   ├── .gitignore          # Git Ignore File
+├── App.js                  # Main Entry File
+├── package.json            # Package Configuration
+├── README.md               # Project Documentation
+```
+
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
